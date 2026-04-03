@@ -1,0 +1,16 @@
+[Unit]
+Description=4reel Controller Service
+After=pigpiod.service
+Required=pigpiod.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/robby/4reel/4reel.py
+WorkingDirectory=/home/robby/4reel
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=robby
+
+[Install]
+WantedBy=multi-user.target
