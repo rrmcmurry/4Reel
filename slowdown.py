@@ -3,7 +3,7 @@ import socket
 import time
 import pygame
 
-MOWER_IP = "192.168.2.109"   # change this
+MOWER_IP = "10.68.68.2"   # change this
 PORT = 5005
 SEND_RATE_HZ = 20
 
